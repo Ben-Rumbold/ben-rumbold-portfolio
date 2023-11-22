@@ -1,0 +1,1015 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --gray-shadow: gray;
+    --light-gray-shadow: rgb(231, 231, 231);
+}
+
+
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 400;
+    src: url(fonts/rubik-variablefont_wght-webfont.woff2);
+}
+
+
+body {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 25px;
+    background-color: #faf9f6;
+}
+
+/* removing blue and underline from nav links */
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:focus {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------- main --------------------- */
+
+main {
+    /* outline: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 900px;
+    /* max-width: 900px; */
+    /* width: 75%; */
+    /* padding: 0 0.3125rem 0 0.3125rem; */
+    /* outline: 3px solid brown; */
+}
+
+/* ------------------- header --------------------- */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 38px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    /* outline: 3px solid red; */
+}
+
+/* ------------------- nav --------------------- */
+
+.nav {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10vw;
+    font-size: 30px;
+    font-weight: bold;
+    /* outline: 3px solid red; */
+}
+
+.ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    /* outline: 3px solid red; */
+}
+
+#aboutMeNav:hover, #portfolioNav:hover, #futureProjectsNav:hover, #contactMeNav:hover {
+    /* outline: 3px solid red */
+    box-shadow: 1vw 1vw 1vw var(--gray-shadow);
+}
+
+
+/* ------------------- about me section --------------------*/
+
+#aboutMe {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10vw;
+    box-shadow: 1vw 1vw 1vw var(--light-gray-shadow);
+    /* outline: 3px solid red; */
+}
+
+.aboutMeTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    /* outline: 3px solid red; */
+}
+
+#aboutMeHeader {
+    width: 100%;
+    padding-top: 5px;
+    height: auto;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    /* outline: 3px solid red; */
+}
+
+#aboutMeParagraph {
+    /* display: flex; */
+    width: 100%;
+    height: auto;
+    /* outline: 3px solid red; */
+}
+
+.aboutMeImgContainer {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    /* outline: 3px solid red; */
+}
+
+#aboutMeImg {
+    width: 100%;
+}
+
+/* -------------------- portfolio section --------------------*/
+
+#portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 1vw 1vw 1vw var(--light-gray-shadow);
+    margin-bottom: 10vw;
+    /* outline: 3px solid black; */
+}
+
+.portfolioHeader {
+    width: 100%;
+    padding-bottom: 25px;
+    /* outline: 3px solid red; */
+}
+
+#portfolioHeaderText {
+    font-size: 50px;
+    /* outline: 3px solid yellow; */
+}
+
+.mainPortfolioCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 445px;
+    height: 445px;
+    /* background-image: linear-gradient(to bottom right, lightgray, gray); */
+    background-image: linear-gradient(to bottom right, #f2f2f0, gray);
+    /* outline: 3px solid green; */
+}
+
+.mainPortfolioCard {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
+    /* outline: 3px solid purple; */
+}
+
+.mainPortfolioCardImage {
+    width: 100%;
+    /* outline: 3px solid black; */
+}
+
+.mainPortfolioCardTextContainer {
+    display: flex;
+    height: 145px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* outline: 3px solid red; */
+}
+
+.smallPortfolioCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 445px;
+    height: 445px;
+    gap: 10px;
+    /* outline: 3px solid green; */
+}
+
+.smallPortfolioCards {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    /* width: 100%; */
+    width: 217.5px;
+    height: 217.5px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #f2f2f0, gray);
+    /* outline: 3px solid red; */
+}
+
+.smallPortfolioCardImage {
+    width: 100%;
+    /* outline: 3px solid yellow; */
+}
+
+.smallPortfolioCardTextContainer {
+    display: flex;
+    height: 72.5px;
+    flex-direction: column;
+    justify-content: space-around;
+    /* outline: 3px solid red; */
+}
+
+#smallPortfolioCardText {
+    margin-top: 5vh;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mainPortfolioCard:hover, .smallPortfolioCards:hover {
+    box-shadow: 5px 5px 20px var(--gray-shadow);
+}
+
+/* ---------------------------- future projects section ------------------------- */
+
+#futureProjects {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 1vw 1vw 1vw var(--light-gray-shadow);
+    margin-bottom: 10vw;
+    /* outline: 3px solid red; */
+}
+
+.FpHeader {
+    width: 100%;
+    padding-bottom: 25px;
+    /* outline: 3px solid red; */
+}
+
+#FpHeaderText {
+    font-size: 50px;
+}
+
+.mainFpCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 445px;
+    height: 445px;
+    /* background-image: linear-gradient(to bottom right, lightgray, gray); */
+    background-image: linear-gradient(to bottom right, #f2f2f0, gray);
+    /* outline: 3px solid green; */
+}
+
+.mainFpCard {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
+    /* outline: 3px solid red; */
+}
+
+.mainFpCardImage {
+    width: 100%;
+    /* outline: 3px solid yellow; */
+}
+
+.mainFpCardTextContainer {
+    display: flex;
+    height: 140px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* outline: 3px solid red; */
+}
+
+.smallFpCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 445px;
+    height: 445px;
+    gap: 10px;
+    /* outline: 3px solid green; */
+}
+
+.smallFpCards {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    width: 217.5px;
+    height: 217.5px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #f2f2f0, gray)
+    /* outline: 3px solid red; */
+}
+
+.smallFpCardImage {
+    width: 100%;
+    /* outline: 3px solid yellow; */
+}
+
+.smallFpCardTextContainer {
+    display: flex;
+    height: 72.5px;
+    flex-direction: column;
+    justify-content: space-around;
+    /* outline: 3px solid red; */
+}
+
+#smallFpCardText {
+    margin-top: 5vh;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mainFpCard:hover, .smallFpCards:hover {
+    box-shadow: 5px 5px 20px var(--gray-shadow);
+}
+
+
+/* -------------------- contact me section -------------------- */
+
+
+#contactMe {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 3vw;
+    /* outline: 3px solid black; */
+}
+
+.contactMeHeader {
+    width: 100%;
+    padding-bottom: 25px;
+    /* outline: 3px solid yellow; */
+}
+
+#contactMeHeaderText {
+    font-size: 50px;
+}
+
+.contactMeLogoContainer {
+    width: 46%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    /* outline: 3px solid red; */
+}
+
+.contactMeLogos {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.contactMeTextContainer {
+    width: 47%;
+    height: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: blue;
+    /* outline: 3px solid green; */
+}
+
+#email {
+    font-size: 30px;
+    font-weight: bold;
+    /* outline: 3px solid cyan; */
+}
+
+#number {
+    font-weight: bold;
+    /* outline: 3px solid maroon; */
+}
+
+#email:hover, #number:hover, .contactMeLogos:hover {
+    box-shadow: 5px 5px 20px var(--gray-shadow);
+    color: blue;
+}
+
+/* media queries */
+/* -------------------- media query for laptop (1024px) -------------------- */
+
+@media only screen and (max-width: 1024px) {
+    main {
+        max-width: 768px;
+    }
+
+    /* .nav {
+        margin-bottom: 80px;
+    } */
+
+    #aboutMeHeader {
+        padding-bottom: 15px;
+    }
+
+    .mainPortfolioCardContainer {
+        width: 379px;
+        height: 379px;
+        /* width: 50%; */
+    }
+
+    .smallPortfolioCardContainer {
+        /* width: 49%; */
+        width: 379px;
+        height: 379px;
+    }
+
+    .smallPortfolioCards {
+        width: 184.5px;
+        height: 184.5px;
+    }
+
+    .mainPortfolioCardTextContainer {
+        height: 125px;
+    }
+
+    .mainFpCardContainer {
+        width: 379px;
+        height: 379px;
+        /* width: 50%; */
+    }
+
+    .smallFpCardContainer {
+        /* width: 49%; */
+        width: 379px;
+        height: 379px;
+    }
+
+    .smallFpCards {
+        width: 184.5px;
+        height: 184.5px;
+    }
+
+    .mainFpCardTextContainer {
+        height: 125px;
+    }
+
+    .contactMeTextContainer {
+        width: 50%;
+    }
+
+    .contactMeLogoContainer {
+        width: 45%;
+    }
+
+}
+
+/* -------------------- media queries for screens below 850px -------------------- */
+
+@media only screen and (max-width: 920px) {
+    main {
+        max-width: 600px;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #secondWordHeader {
+        margin-left: 25px;
+    }
+
+    .nav {
+        margin-bottom: 8vw;
+    }
+
+    .ul {
+        flex-direction: column;
+        width: auto;
+    }
+
+    #aboutMeNav, #portfolioNav, #futureProjectsNav, #contactMeNav {
+        margin-bottom: 5px;
+        width: auto;
+    }
+
+    #aboutMe {
+        flex-direction: column;
+    }
+
+    .aboutMeTextContainer, .aboutMeImgContainer {
+        width: 100%;
+    }
+
+    .aboutMeImgContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #aboutMeImg {
+        width: 60%;
+    }
+
+    .mainPortfolioCardContainer {
+        width: 295px;
+        height: 295px;
+    }
+
+    .smallPortfolioCardContainer {
+        width: 295px;
+        height: 295px;
+    }
+
+    .smallPortfolioCards {
+        width: 142.5px;
+        height: 142.5px;
+    }
+
+    .mainPortfolioCardTextContainer {
+        height: 95px;
+    }
+
+    .mainPortfolioCardTextContainer p {
+        font-size: 20px;
+    }
+
+    .mainFpCardContainer {
+        width: 295px;
+        height: 295px;
+    }
+
+    .smallFpCardContainer {
+        width: 295px;
+        height: 295px;
+
+    }
+
+    .smallFpCards {
+        width: 142.5px;
+        height: 142.5px;
+    }
+
+    .mainFpCardTextContainer {
+        height: 95px;
+    }
+
+    h3, h4 {
+        font-size: 1em;
+    }
+
+    .mainFpCardTextContainer p {
+        font-size: 20px;
+    }
+
+    #contactMe  {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 240px;
+        margin-bottom: 30px;
+    }
+
+    .contactMeLogoContainer {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .contactMeTextContainer {
+        width: 50%;
+        height: auto;
+    }
+
+    #email {
+        margin-bottom: 15px;
+    }
+
+}
+
+/* -------------------- media queries for screens below 750px -------------------- */
+
+@media only screen and (max-width: 750px) {
+
+    .main {
+        max-width: 520px;
+    }
+
+    .mainPortfolioCardContainer {
+        width: 255px;
+        height: 255px;
+    }
+
+    .smallPortfolioCardContainer {
+        width: 255px;
+        height: 255px;
+
+    }
+
+    .smallPortfolioCards {
+        width: 122.5px;
+        height: 122.5px;
+    }
+
+    .mainPortfolioCardTextContainer {
+        height: 81px;
+    }
+
+    .mainPortfolioCardTextContainer p {
+        font-size: 15px;
+    }
+
+    .mainFpCardContainer {
+        width: 255px;
+        height: 255px;
+    }
+
+    .smallFpCardContainer {
+        width: 255px;
+        height: 255px;
+
+    }
+
+    .smallFpCards {
+        width: 122.5px;
+        height: 122.5px;
+    }
+
+    .mainFpCardTextContainer {
+        height: 81px;
+    }
+
+    .mainFpCardTextContainer p {
+        font-size: 15px;
+    }
+
+}
+
+/* -------------------- media queries for screens below 610px -------------------- */
+
+@media only screen and (max-width: 610px) {
+
+    .main {
+        max-width: 430px
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .mainPortfolioCardContainer {
+        width: 430px;
+        height: 430px;
+        margin-bottom: 10px;
+    }
+
+    .smallPortfolioCardContainer {
+        width: 430px;
+        height: 430px;
+    }
+
+    .smallPortfolioCards {
+        width: 210px;
+        height: 210px;
+    }
+
+    .mainPortfolioCardTextContainer {
+        height: 137px;
+    }
+
+    .mainPortfolioCardTextContainer p {
+        font-size: 20px;
+    }
+
+    .mainFpCardContainer {
+        width: 430px;
+        height: 430px;
+        margin-bottom: 10px;
+    }
+
+    .smallFpCardContainer {
+        width: 430px;
+        height: 430px;
+    }
+
+    .smallFpCards {
+        width: 210px;
+        height: 210px;
+    }
+
+    .mainFpCardTextContainer {
+        height: 130px;
+    }
+
+    .mainFpCardTextContainer p {
+        font-size: 20px;
+    }
+
+    .contactMeLogoContainer {
+        width: 60%;
+    }
+}
+
+/* -------------------- media queries for screens below 500px -------------------- */
+
+@media only screen and (max-width: 500px) {
+
+    .main {
+        max-width: 400px
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #firstWordHeader {
+        margin-right: 60px;
+    }
+
+    #secondWordHeader {
+        margin-left: 0;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    #aboutMeParagraph {
+        font-size: 20px;
+    }
+
+    .mainPortfolioCardContainer {
+        width: 400px;
+        height: 400px;
+    }
+
+    .smallPortfolioCardContainer {
+        width: 400px;
+        height: 400px;
+    }
+
+    .smallPortfolioCards {
+        width: 195px;
+        height: 195px;
+    }
+
+    .mainPortfolioCardTextContainer {
+        height: 128px;
+    }
+
+    .mainFpCardContainer {
+        width: 400px;
+        height: 400px;
+    }
+
+    .smallFpCardContainer {
+        width: 400px;
+        height: 400px;
+    }
+
+    .smallFpCards {
+        width: 195px;
+        height: 195px;
+    }
+
+    .mainFpCardTextContainer {
+        height: 125px;
+    }
+
+    .contactMeLogoContainer {
+        width: 65%;
+    }
+}
+
+/* -------------------- media queries for screens below 450px -------------------- */
+
+@media only screen and (max-width: 450px) {
+
+    .main {
+        max-width: 360px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    #firstWordHeader {
+        margin-right: 45px;
+    }
+
+    .nav {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    #aboutMeParagraph {
+        margin-bottom: 10px;
+    }
+
+    #aboutMeImg {
+        width: 65%;
+    }
+    
+    .mainPortfolioCardContainer {
+        width: 360px;
+        height: 360px;
+    }
+
+    .smallPortfolioCardContainer {
+        width: 360px;
+        height: 360px;
+    }
+
+    .smallPortfolioCards {
+        width: 175px;
+        height: 175px;
+    }
+
+    .mainPortfolioCardTextContainer {
+        height: 115px;
+    }
+
+    .mainFpCardContainer {
+        width: 360px;
+        height: 360px;
+    }
+
+    .smallFpCardContainer {
+        width: 360px;
+        height: 360px;
+    }
+
+    .smallFpCards {
+        width: 175px;
+        height: 175px;
+    }
+
+    .mainFpCardTextContainer {
+        height: 112px;
+    }
+
+    #contactMe {
+        margin-bottom: 10px;
+        height: 200px;
+    }
+
+    .contactMeLogoContainer {
+        width: 55%;
+        margin-bottom: 10px;
+    }
+
+    .contactMeLogos {
+        width: 35px;
+    }
+
+    #email {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    #number {
+        font-size: 20px;
+    }
+
+}
+
+/* -------------------- media queries for screens below 400px -------------------- */
+
+@media only screen and (max-width: 400px) {
+
+    .main {
+        max-width: 320px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .nav {
+        margin-bottom: 7vw;
+    }
+
+    #aboutMeImg {
+        width: 70%;
+    }
+
+    .mainPortfolioCardContainer {
+        width: 320px;
+        height: 320px;
+    }
+
+    .smallPortfolioCardContainer {
+        width: 320px;
+        height: 320px;
+    }
+
+    .smallPortfolioCards {
+        width: 155px;
+        height: 155px;
+    }
+
+    .mainPortfolioCardTextContainer {
+        height: 102px;
+    }
+
+    .mainFpCardContainer {
+        width: 320px;
+        height: 320px;
+    }
+
+    .smallFpCardContainer {
+        width: 320px;
+        height: 320px;
+    }
+
+    .smallFpCards {
+        width: 155px;
+        height: 155px;
+    }
+
+    .mainFpCardTextContainer {
+        height: 98px;
+    }
+
+    .contactMeLogoContainer {
+        width: 75%;
+    }
+}
+
+/* -------------------- media queries for screens below 340px -------------------- */
+
+@media only screen and (max-width: 340px) {
+
+    .main {
+        max-width: 300px;
+    }
+
+    #aboutMeImg {
+        width: 75%;
+    }
+
+    .mainPortfolioCardContainer {
+        width: 300px;
+        height: 300px;
+    }
+
+    .smallPortfolioCardContainer {
+        width: 300px;
+        height: 300px;
+    }
+
+    .smallPortfolioCards {
+        width: 145px;
+        height: 145px;
+    }
+
+    .mainPortfolioCardTextContainer {
+        height: 96px;
+    }
+
+    .mainFpCardContainer {
+        width: 300px;
+        height: 300px;
+    }
+
+    .smallFpCardContainer {
+        width: 300px;
+        height: 300px;
+    }
+
+    .smallFpCards {
+        width: 145px;
+        height: 145px;
+    }
+
+    .mainFpCardTextContainer {
+        height: 93px;
+    }
+
+    .contactMeLogoContainer {
+        width: 75%;
+    }
+}
